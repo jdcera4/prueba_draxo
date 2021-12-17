@@ -41,6 +41,15 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin-left: 10%;
+}
+
 .button {
   display: var(--button-display);
   padding: var(--button-padding);
