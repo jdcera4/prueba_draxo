@@ -2,12 +2,15 @@
 
 *, *:before, *:after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+  
 
 body {
   color: var(--text-color);
@@ -15,6 +18,7 @@ body {
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   min-height: var(--line-height-base);
+  overflow-x: hidden;
 }
 
 [data-section-theme="dark"] {
@@ -41,15 +45,6 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
-ul{
-    display: flex;
-    justify-content: flex-end;
-}
-
-ul li {
-    margin-left: 10%;
-}
-
 .button {
   display: var(--button-display);
   padding: var(--button-padding);
@@ -65,6 +60,15 @@ ul li {
   background: var(--button-hover-background);
   transition-duration: var(--transition-duration);
   transition-property: color, background-color;
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li {
+  margin-left: 10%;
 }
 
 .visually-hidden {
@@ -109,7 +113,7 @@ ul.row {
 }
 
 .container {
-  width: 960px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -212,29 +216,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 360px) {
-  body{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  .col-1-2{
     width: 100%;
   }
-  html {
-    font-size: 62.5%;
+  .container .people img{
+    bottom: 5%;
+    left: 0%;
+    position: relative;
   }
-  .section-hero{
-    background-image: url(../images/blur.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    width: 100%;
-  }
-  .section-hero .section-title {
-    margin-bottom: 1rem;
-    margin-top: 0;
-    color: white;
-    width: 100%;
-  }
-  .section-hero .section-inner {
-    padding: 0rem 0rem 10rem 0;
+
+  .container .people img{
+    bottom: 5%;
+    left: 0%;
+    position: relative;
   }
 }
 
