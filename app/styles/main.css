@@ -124,6 +124,7 @@ ul.row {
   font-weight: var(--font-weight-bold);
   margin: var(--section-title-margin);
   color: var(--section-title-color);
+  margin-left: 4%;
 }
 
 .section {
@@ -133,6 +134,10 @@ ul.row {
 .section-body {
   padding: var(--section-body-padding);
   margin-bottom: 8rem;
+}
+
+.section-body .row .col-1-2{
+    padding: 5%;
 }
 
 .section-hero {
@@ -216,29 +221,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 360px) and (max-width: 800px){
-    html{
+    body{
         overflow-x: hidden;
     }
     .container .section-body{
         margin-bottom: 2%;
+        overflow-x: hidden;
     }
     .container .section-inner{
         padding-bottom: 0;
+        overflow-x: hidden;
     }
 
     .row{
         display: flex;
         flex-wrap: wrap;
+        overflow-x: hidden;
     }
     .col-1-2{
         width: 100%;
+        overflow-x: hidden;
     }
     .container .people img{
         bottom: 5%;
         left: 0%;
         position: relative;
+        overflow-x: hidden;
     }
     .footer{
+        overflow-x: hidden;
+        overflow-x: hidden;
+    }
+
+    .social .nav{
         overflow-x: hidden;
     }
 }
