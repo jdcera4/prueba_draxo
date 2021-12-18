@@ -216,24 +216,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 360px) and (max-width: 800px){
+    html{
+        overflow-x: hidden;
+    }
+    .container .section-body{
+        margin-bottom: 2%;
+    }
+    .container .section-inner{
+        padding-bottom: 0;
+    }
+
     .row{
         display: flex;
         flex-wrap: wrap;
     }
-  .col-1-2{
-    width: 100%;
-  }
-  .container .people img{
-    bottom: 5%;
-    left: 0%;
-    position: relative;
-  }
-
-  .container .people img{
-    bottom: 5%;
-    left: 0%;
-    position: relative;
-  }
+    .col-1-2{
+        width: 100%;
+    }
+    .container .people img{
+        bottom: 5%;
+        left: 0%;
+        position: relative;
+    }
+    .footer{
+        overflow-x: hidden;
+    }
 }
 
 :root {
